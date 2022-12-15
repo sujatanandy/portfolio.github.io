@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Portfolio Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="custom.js"></script>
+     <script src="https://code.jquery.com/jquery-3.6.1.js" ></script>
+     <script src="js/typed.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+		<div class="logo">PORT<span>FOLIO</span></div>
+		<div class="menu">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Skills</a>
+			<a href="#">Services</a>
+			<a href="#">Contact</a>
+		</div>
+	</nav>
+     <div class="text">
+     	<p>Hello, I am</p>
+     	<h1>Sujata Nandy</h1>
+     	<p>And I'm a <span id="ani" style=" color: #e74c3c;"></span></p>
+     	<button class="c-btn">Hire me</button>
+     </div>
+
+	</header>
+	<section id="about">
+     	<div class="section-info">
+     		<h1>About</h1>
+     		<p>Who i am?</p>
+     	</div>
+     	<div class="about-row">
+     		<div class="about-left-col">
+     			<img src="img/grl1.jpg">
+     		</div>
+
+     		<div class="about-right-col">
+     			<p id="p-title">
+     				Hello, I'm Sujata & I'm a <span id="ani2" style=" color: #e74c3c;">
+     			</p>
+     			<p>I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen. I like to see the sunrise in the morning, I like to see the moonlight at night; I like to feel the music flowing on my face, I like to smell the wind coming from the ocean. </p>
+     			<button class="c-btn">Download CV</button>
+     		</div>
+     	</div>
+     </section>
+     <section id="skills">
+     	<div class="section-info">
+     		<h1>Skill's</h1>
+     		<p>Who i am?</p>
+     	</div>
+     	<div class="skills-row">
+     		<div class="skills-left-col">
+     			<p>A skill is the learned ability to act with determined results with good execution often within a given amount of time, energy, or both. Skills can often be divided into domain-general and domain-specific skills. For example, in the domain of work, some general skills would include time management, teamwork and leadership, self-motivation and others, whereas domain-specific skills would be used only for a certain job. Skill usually requires certain environmental stimuli and situations to assess the level of skill being shown and used.</p>
+     			<button class="c-btn">Read more</button>
+     		</div>
+     		<div class="skills-right-col">
+     			<div class="progress-div">
+     				<p>
+     				<span>HTML</span><br>
+     				<progress value="90" max="100"></progress>
+     				<span>90%</span>
+     			    </p>
+     			    <p>
+     				<span>CSS</span><br>
+     				<progress value="80" max="100"></progress>
+     				<span>80%</span>
+     			    </p>
+     			    <p>
+     				<span>JAVASCRIPT</span><br>
+     				<progress value="70" max="100"></progress>
+     				<span>70%</span>
+     			    </p>
+     			    <p>
+     				<span>JQUERY</span><br>
+     				<progress value="65" max="100"></progress>
+     				<span>65%</span>
+     			    </p>
+     			    <p>
+     				<span>BOOTSTRAP</span><br>
+     				<progress value="80" max="100"></progress>
+     				<span>80%</span>
+     			    </p>
+     			</div>
+     		</div>
+     	</div>
+     </section>
+
+     <section id="services">
+     	<div class="section-info">
+     		<h1>Services</h1>
+     		<p>What we provide?</p>
+     	</div>
+
+     	<div class="services-row">
+     		<div class="services-box" data-tilt>
+     			<img src="img/grl5.png">
+     			<h2>Web Design</h2>
+     			<p>
+     				Astrology is the study of the influence that distant cosmic objects,usually stars and planets, have on human lives
+     			</p>
+     		</div>
+     		<div class="services-box" data-tilt>
+     			<img src="img/grl5.png">
+     			<h2> Web Development</h2>
+     			<p>
+     				Astrology is the study of the influence that distant cosmic objects,usually stars and planets, have on human lives
+     			</p>
+     		</div>
+     		<div class="services-box" data-tilt>
+     			<img src="img/grl5.png">
+     			<h2>Apps Development</h2>
+     			<p>
+     				Astrology is the study of the influence that distant cosmic objects,usually stars and planets, have on human lives
+     			</p>
+     		</div>
+     		
+     	</div>
+     	
+     </section>
+     <section id="contact">
+     	<div class="section-info" style="color: white">
+     		<h1>Get in Touch</h1>
+     		<p style="color: black">We are Available</p>
+     	</div>
+
+     	<div class="contact-row">
+     		<div class="contact-left-col">
+     			<img src="img/bg4.png">
+     		</div>
+     		<div class="contact-right-col">
+                 <form>
+                    <h2>Connect with us</h2>
+                      <input type="text" name="" placeholder="Name">
+                      <input type="email" name="" placeholder="E-mail">
+                      <br>
+                      <textarea cols="40" rows="10" placeholder="Message"></textarea>
+                      <br>
+                      <button class="c-btn">Submit</button>
+                 </form>        
+               </div>
+     	</div>
+     	
+     </section>
+     <section id="footer">
+          <h2>Develpoed by <br>Suajta Nandy</h2>
+          <img src="img/icon.jpg" height="40px" width="150px">
+          
+     </section>
+
+<script src="js/jquery.ripples-min.js"></script>
+<script>
+     jQuery(document).ready(function(){
+          $('header').ripples({
+  dropRadius:20,
+  perturbance:0.03,
+  
+});
+
+     });
+</script>
+<script>
+     let animate= new Typed('#ani',{
+          strings:["Font End Developer","Youtuber","Blogger"],
+          typeSpeed:100,
+          backSpeed:100,
+          loop:true,
+     });
+
+</script>
+
+<script>
+     let animat= new Typed('#ani2',{
+          strings:["Font End Developer","Youtuber","Blogger"],
+          typeSpeed:100,
+          backSpeed:100,
+          loop:true,
+     });
+
+</script>
+
+<script src="js/tilt.jquery.min.js"></script>
+
+
+</body>
+</html>
